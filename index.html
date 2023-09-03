@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: brown;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .btn {
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute;
+            background-color: blue;
+            box-shadow: 2px 2px 2px rgb(2, 0, 0);
+            border: none;
+            cursor: pointer;
+        }
+        .p {
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            color: rgb(48, 29, 4);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="goBack()">GO BACK</button>
+    <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+    <script>
+        function goBack() {
+            window.history.back();
+            console.log("fun is runing");
+        }
+        alert(location.href);
+        if (confirm("Went to Visit Shan Ali ?")) {
+            location.href = "https://www.youtube.com/channel/UCueptVwgtob4dFyObXJ-puA";
+        }
+    </script>
+</body>
+</html>
